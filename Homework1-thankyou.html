@@ -1,0 +1,84 @@
+ <!--
+Name: Thi Dang
+Name of File: homework1-thankyou.html
+Date Created: 09/04/2024
+Date Last Edited: 09/21/2024
+Version: 1.0
+Description: After the user has completely filled out the form and hit submit a thank you screen will display
+-->
+ 
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thank you! </title>
+    <link href="homework1.css" rel="stylesheet">
+</head>
+
+    <!-- Banner with company logo, name,  and date -->
+        <body>
+  
+            <tr>
+                <td>
+                    <img
+                        id="logo"
+                        src="../TTreatmentsLogo.png" 
+                    />       
+                </td>
+                
+                <td valign="bottom" align="right">
+                     <h1>T Treatments</h1>
+                    <!-- Today's Date -->
+                        <center>
+                        <p>Today is: <span id="currentDate"></span></p>
+                        <p id="date"></p>
+                         <!-- JavaScript for displaying dynamic date -->
+                             <script>
+                                const dateElement = document.getElementById('date');
+                                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                                const today = new Date().toLocaleDateString('en-US', options);
+                                dateElement.textContent = today;
+                            </script>
+                </td>
+                    </tr>
+                    <hr>
+                        <!-- Form -->
+                        <div class="form-container">
+                        <form id="registrationForm" action="homework1-thankyou.html" method="post">
+                         <div align="center">
+                         <table>
+                        <tr>
+                         <td>
+                            <h2>Your Submission Was Successful</h2>
+                        <p>Thank you for registering!</p>
+                        <form action="homework1.html">
+                        <input type="submit" value="Return to Home Page" />
+                        </form>
+                        </table>
+                        </center>
+                        
+                        
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+        <div>
+            <img id="footer-logo" src="../TTreatmentsLogo.png" alt="Footer Logo" />
+            </a>
+            <p>
+                <a href="mailto:theedang1@gmail.com">theedang1@gmail.com</a>
+            </p>
+            <p>
+                <a href="mailto:theedang1@gmail.com" class="contact">Contact Us!</a>
+            </p>
+            <p>4302 University Dr, Houston, TX 77004</p>
+        </div>
+    </footer>
+
+    <script src="homework1.js"></script>
+
+</body>
+</html>
