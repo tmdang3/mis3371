@@ -1,0 +1,180 @@
+/*
+ Name: Thi Dang
+ Name of File: homework3.css
+ Date Created: 11/01/2024
+ Date Last Edited: 11/09/2024
+ Version: 1.0
+ Description: CSS for homework3.html 
+ */
+
+* {
+    font-family: Cambria;
+    margin: 0; /* Added for consistency */
+    padding: 0; /* Added for consistency */
+}
+
+body {
+    background-color: rgb(152, 138, 121);
+}
+
+main {
+    background-color: rgb(207, 189, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+}
+
+table {
+    background-color: #d0c4aa;
+    padding: 60px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 20%;
+    margin: 0 auto;
+}
+.ssn-container {
+    position: relative;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+textarea, 
+select {
+    border-radius: 3px; 
+    margin: 7px 0;
+}
+
+.form {
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 25px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    padding-left: 80px;
+}
+
+.table {
+    text-align: right;
+}
+
+.slider {
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 30px; /* Merged with the above rule */
+}
+
+#slider {
+    width: 40%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto; 
+    padding-top: 20px; 
+    width: 25%;
+}
+
+#footer-logo {
+    justify-content: center;
+    width: 150px;
+    height: auto;
+}
+
+.thankyou {
+    align-items: center;
+    font-size: 30px;
+}
+
+#reviewArea {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#reviewArea .outputdata {
+    font-style: italic;
+    color: #555;
+    background-color: #d0c4aa;
+}
+
+.error-message {
+    color: red; /* Red color */
+    font-size: 0.8em; /* Added 'em' for proper sizing */
+    display: block; 
+    margin-top: 5px; 
+}
+
+#alert-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(152, 138, 121);
+}
+
+#alert-conten{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 30px;
+    text-align: center;
+}
+
+#alert-content h4 {
+    margin-top: 20%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Cambria;
+    font-weight: normal;
+}
+
+#close-alert {
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: black;
+    border-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20 px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Cambria;
+    font-weight: normal;
+}
