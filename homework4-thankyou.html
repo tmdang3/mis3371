@@ -1,0 +1,75 @@
+<!--
+Program name: homework4-thankyou.html
+Author: Thi Dang
+Date created: 11/20/2024
+Date last edited: 12/04/2024
+Version: 1.0
+Description: After the user has completely filled out the form and hit submit, a thank you screen will display
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link href="homework4.css" rel="stylesheet">
+</head>
+
+<body class="thankyou-page"> 
+    <!-- Banner with company logo, name, and date -->
+    <header>
+        <div>
+            <img id="logo" src="../TTreatmentsLogo.png" alt="Company Logo" />
+            <h1>T Treatments</h1>
+            <!-- Today's Date -->
+            <p id="date"></p>
+            <script>
+                const dateElement = document.getElementById('date');
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                const today = new Date().toLocaleDateString('en-US', options);
+                dateElement.textContent = today;
+            </script>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Main content section -->
+    <main>
+        <div class="form-container" align="center">
+            <table class="output">
+                <tr>
+                    <td colspan="2" align="center">
+                        <h2>Thank you for your submission!</h2>
+                        <p>We will be contacting you shortly!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <!-- Return to Home Page form -->
+                        <form action="homework4.html">
+                            <input type="submit" value="Return to Home Page" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <p><a href="mailto:theedang1@gmail.com">theedang1@gmail.com</a></p>
+            <p><a href="mailto:theedang1@gmail.com" class="contact">Contact Us!</a></p>
+            <p>4302 University Dr, Houston, TX 77004</p>
+        </div>
+    </footer>
+
+    <script src="homework4.js"></script>
+</body>
+
+</html>
